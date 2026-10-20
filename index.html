@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Flex Paragraphs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .paragraph-box {
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .paragraph-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Yellow Box - Georgia Font */
+        .box-yellow {
+            background-color: #FFD700;
+            font-family: 'Georgia', serif;
+            font-size: 18px;
+            color: #333;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .box-yellow h3 {
+            color: #8B7500;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .box-yellow p {
+            line-height: 1.8;
+        }
+
+        /* Red Box - Courier New Font */
+        .box-red {
+            background-color: #FF6B6B;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            color: #fff;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .box-red h3 {
+            color: #8B0000;
+            margin-bottom: 15px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .box-red p {
+            line-height: 1.7;
+        }
+
+        /* Blue Box - Verdana Font */
+        .box-blue {
+            background-color: #4A90E2;
+            font-family: 'Verdana', sans-serif;
+            font-size: 17px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .box-blue h3 {
+            color: #001A4D;
+            margin-bottom: 15px;
+            font-size: 21px;
+            text-decoration: underline;
+        }
+
+        .box-blue p {
+            line-height: 1.75;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Yellow Box with Georgia Font -->
+        <div class="paragraph-box box-yellow">
+            <h3>Elegance & Grace</h3>
+            <p>
+                The morning sun cast golden rays across the tranquil garden, illuminating the delicate petals of blooming flowers. With a serene beauty that captivates the soul, nature whispers its timeless secrets to those who pause to listen. Each moment becomes precious, a fleeting treasure wrapped in the warmth of gentle light and peaceful contemplation.
+            </p>
+        </div>
+
+        <!-- Red Box with Courier New Font -->
+        <div class="paragraph-box box-red">
+            <h3>Bold & Direct</h3>
+            <p>
+                CODE MEETS CREATIVITY HERE. THIS BOX REPRESENTS THE TECHNICAL PRECISION AND UNWAVERING CLARITY OF COMPUTER LANGUAGE. EVERY CHARACTER, EVERY SPACE, EVERY LINE BREAK MATTERS. IN THIS DIGITAL REALM, NOTHING IS LEFT TO CHANCE. BOLDNESS AND DIRECTNESS ARE THE KEYS TO EFFECTIVE COMMUNICATION.
+            </p>
+        </div>
+
+        <!-- Blue Box with Verdana Font -->
+        <div class="paragraph-box box-blue">
+            <h3>Modern & Clean</h3>
+            <p>
+                In today's fast-paced world, simplicity reigns supreme. Clean design and straightforward messaging create a compelling user experience. The Verdana typeface brings clarity and readability to every word, making complex ideas accessible to all. Modern thinking embraces both form and function in perfect harmony.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
